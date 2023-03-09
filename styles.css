@@ -1,0 +1,124 @@
+/* body style */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: navy;
+  color: silver;
+  margin: 0;
+  padding: 0;
+  }
+  
+  /* header style */
+  header {
+  background-color: silver;
+  color: navy;
+  padding: 10px;
+  text-align: center;
+  }
+  
+  header h1 {
+  margin: 0;
+  font-size: 40px;
+  }
+  
+  /* section style */
+  section {
+  background-color: white;
+  margin: 20px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 20px;
+  }
+  
+  section h2 {
+  font-size: 28px;
+  margin-top: 0;
+  grid-column: 1 / span 12;
+  }
+  
+  section p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  grid-column: 1 / span 8;
+  }
+  
+  button {
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  font-size: 20px;
+  padding: 12px 24px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  }
+  
+  button:hover {
+  transform: scale(1.05);
+  }
+  
+  /* rezerva button style */
+  #rezerva {
+  background-color: rgb(0, 255, 34);
+  }
+  
+  #rezerva:hover {
+  background-color: white;
+  color: black;
+  }
+  
+  /* anuleaza button style */
+  #anuleaza {
+  background-color: rgb(255, 0, 0);
+  }
+  
+  #anuleaza:hover {
+  background-color: white;
+  color: black;
+  }
+  
+  .button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: 1 / span 4;
+  margin: 20px 0;
+  }
+  
+  .box img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  grid-column: 5 / span 8;
+  }
+  
+  /* Add white space around elements */
+  section > * {
+  margin: 10px;
+  }
+  
+  /* Improve typography */
+  h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  }
+  
+  h1 {
+  font-size: 48px;
+  }
+  
+  h2 {
+  font-size: 36px;
+  }
+  
+  p {
+  font-size: 18px;
+  }
+  
+  /* Color palette */
+  :root {
+  --primary-color: #007bff;
+  --secondary-color: #6c757d;
+  --text-color: #212529;
+  }
